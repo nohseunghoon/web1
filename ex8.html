@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title></title>
+  </head>
+
+  <body>
+    <h1>Loop & Array</h1>
+    <script>
+      var coworkers = ['노승','곽민','민경','뚜땅'];
+    </script>
+    <h2>Co Workers</h2>
+    <ul>
+      <script>
+      var i = 0;
+        for(i=0;i<coworkers.length;i++){
+          document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+        }
+
+      coworkers.forEach(function(item,index,array){
+        console.log(item,index);
+        document.write("<p>"+item+"</p>")
+      });
+      </script>
+    </ul>
+  </body>
+</html>
